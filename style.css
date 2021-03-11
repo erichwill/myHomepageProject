@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f5f5;
+  font-family: "Space Mono", monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: block;
+  width: 100%;
+  padding-top: 1rem;
+  background-color: #f0f5f5;
+}
+
+div.nav-bar {
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+a.logo img {
+  height: 3rem;
+}
+
+nav.main-nav a {
+  margin-left: 1rem;
+}
+
+nav.main-nav a {
+  font-size: 1.2rem;
+  color: #8f8f8f;
+}
+
+nav.main-nav a:hover {
+  opacity: 0.7;
+}
+
+section.section-hero {
+  display: flex;
+  min-height: 80vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f5f5;
+}
+
+div.container-hero {
+  max-width: 80%;
+}
+
+div.container-hero h1 {
+  margin-left: 10%;
+  width: 70%;
+  font-size: 5vh;
+  font-weight: 400;
+}
+
+div.waves-purple {
+  position: relative;
+  z-index: 1;
+  height: 11vw;
+  background-image: url(media/purple_wave.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+section.section-about {
+  position: relative;
+  width: 100%;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: #724bc6;
+  justify-content: center;
+  display: flex;
+}
+
+div.container-about {
+  max-width: 80vh;
+}
+
+h2.about-primary {
+  position: relative;
+  width: 70%;
+  margin-left: 10rem;
+  padding: 0 0 1rem 1rem;
+  font-size: 2rem;
+  color: #f0f5f5;
+  z-index: 2;
+  background-color: #724bc6;
+}
+
+h3.about-secondary {
+  position: relative;
+  width: 50%;
+  margin: 15vh 0 0 20%;
+  padding: 1rem 0 0 1rem;
+  color: #f0f5f5;
+  background-color: #724bc6;
+  z-index: 2;
+}
+
+img.circle-about {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  height: 60%;
+  z-index: 1;
+  transition: 10s ease-in-out;
+  animation: turn 10s ease-in-out infinite forwards paused;
+}
+
+img.circle-about:hover {
+  animation-play-state: running;
+}
+
+img.zigzag-about {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  height: 100%;
+}
+
+div.angles-purple {
+  position: relative;
+  z-index: 1;
+  height: 11vw;
+  background-image: url(media/purple_mountain.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+section.section-three {
+  display: flex;
+  min-height: 80vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f5f5;
+}
+
+div.container-three {
+  max-width: 80%;
+}
+
+h2.three-primary {
+  position: relative;
+  width: 60%;
+  margin-left: 4rem;
+  font-size: 2rem;
+}
+
+h3.three-secondary {
+  position: relative;
+  width: 40%;
+  margin: 3rem 0 0 50%;
+}
+
+section.section-four {
+  position: relative;
+  width: 100%;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  background-color: #724bc6;
+  justify-content: center;
+  display: flex;
+}
+
+div.container-four {
+  max-width: 80vh;
+}
+
+h2.four-primary {
+  position: relative;
+  width: 60%;
+  margin-left: 16rem;
+  padding: 0 0 1rem 1rem;
+  font-size: 2rem;
+  color: #f0f5f5;
+  z-index: 2;
+  background-color: #724bc6;
+}
+
+img.circle-four {
+  position: absolute;
+  left: 30%;
+  top: 10%;
+  height: 60%;
+  z-index: 1;
+  animation: turn 10s ease-in-out infinite forwards paused;
+}
+
+img.circle-four:hover {
+  animation-play-state: running;
+}
+
+div.diagonal img {
+  background-color: #724bc6;
+  position: relative;
+  width: 100%;
+  margin-bottom: -10px;
+  background-position: 50% 100%;
+}
+
+section.section-github {
+  position: relative;
+  height: 90vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: #1a1a10;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+div.container-github {
+  max-width: 90vh;
+  justify-content: center;
+  animation: opacity 0.3s ease-in-out;
+}
+
+img.circle-github {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 15%;
+  height: 70%;
+  margin: auto;
+  animation: turn 15s ease-in-out infinite forwards paused;
+}
+
+img.circle-github:hover {
+  animation-play-state: running;
+}
+
+h3.github-primary {
+  color: #f0f5f5;
+  font-size: 2rem;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.github-primary a:hover {
+  opacity: 0.7;
+}
+
+div.diagonal-reverse img {
+  background-color: #99d5c5;
+  position: relative;
+  width: 100%;
+  margin-bottom: -7px;
+  background-position: 50% 100%;
+}
+
+section.section-me {
+  position: relative;
+  /* height: 90vh; */
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: #99d5c5;
+  display: flex;
+  width: 100%;
+}
+
+img.zigzag-me {
+  position: absolute;
+  height: 100%;
+  margin-top: -10vh;
+}
+
+div.container-me {
+  margin: auto;
+  max-width: 120vh;
+}
+
+h2.me-primary {
+  width: 70%;
+  margin-left: 25%;
+  font-size: 2.5rem;
+}
+
+h4.me-secondary {
+  width: 50%;
+  margin-left: 40%;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+div.me-image {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img.my-picture {
+  margin-bottom: 1rem;
+  height: 250px;
+  clip-path: polygon(0 6%, 98% 0, 100% 100%, 0 95%);
+}
+
+img.my-picture:hover {
+  animation: polygon 0.3s ease-out forwards;
+}
+
+div.waves-black {
+  position: relative;
+  z-index: 1;
+  height: 11vw;
+  background-color: #99d5c5;
+  background-image: url(media/black_wave.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+footer.footer {
+  padding-bottom: 4rem;
+  background-color: #1a1a10;
+}
+
+div.container-footer {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  color: #f0f5f5;
+}
+
+div.footer-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.footer-left a {
+  padding-right: 50px;
+}
+
+div.footer-left a:hover {
+  opacity: 0.7;
+}
+
+div.footer-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+
+div.footer-right a:hover {
+  opacity: 0.7;
+}
+
+img.media-img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+@keyframes turn {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes polygon {
+  from {
+    clip-path: polygon(0 6%, 98% 0, 100% 100%, 0 95%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
