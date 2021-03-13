@@ -197,3 +197,67 @@ img.media-img {
   vertical-align: middle;
   width: 100%;
 }
+
+@media only screen and (max-width: 650px) {
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  header.header {
+    position: relative;
+    padding: 0;
+    width: fit-content;
+  }
+
+  div.nav-bar {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  nav.main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  a.logo img {
+    height: 2rem;
+  }
+
+  div.container-contact h1 {
+    margin-top: 4rem;
+    font-size: 1.5rem;
+  }
+
+  div.form-top {
+    flex-direction: column;
+  }
+
+  div.form-right {
+    margin-left: 0;
+  }
+
+  div.form-right textarea {
+    width: 20rem;
+    height: 10rem;
+  }
+
+  div.container-footer {
+    padding-top: 1rem;
+  }
+
+  div.container-footer,
+  div.footer-left {
+    flex-direction: column;
+  }
+
+  div.footer-left a {
+    margin-bottom: 2rem;
+    padding-right: 0;
+  }
+}

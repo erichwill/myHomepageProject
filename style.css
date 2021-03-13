@@ -393,3 +393,85 @@ img.media-img {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
+
+@media only screen and (max-width: 650px) {
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  header.header {
+    position: relative;
+    padding: 0;
+    width: fit-content;
+  }
+
+  div.nav-bar {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  nav.main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  a.logo img {
+    height: 2rem;
+  }
+
+  img.circle-about,
+  img.circle-four,
+  img.circle-github {
+    left: 0;
+    height: inherit;
+  }
+
+  h2.about-primary,
+  h2.four-primary {
+    margin-left: 1rem;
+    width: 80%;
+    font-size: 1.5rem;
+  }
+
+  h2.three-primary {
+    font-size: 1.5rem;
+  }
+
+  img.circle-github {
+    top: 0;
+    bottom: 0;
+  }
+
+  div.container-hero h1 {
+    width: 100%;
+  }
+
+  img.zigzag-about,
+  img.zigzag-me {
+    display: none;
+  }
+
+  h2.me-primary {
+    font-size: 2rem;
+  }
+
+  div.container-footer {
+    padding-top: 1rem;
+  }
+
+  div.container-footer,
+  div.footer-left {
+    flex-direction: column;
+  }
+
+  div.footer-left a {
+    margin-bottom: 2rem;
+    padding-right: 0;
+  }
+}
